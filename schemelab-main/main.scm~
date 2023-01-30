@@ -1,0 +1,14 @@
+;;Adds up the elements in a list
+(define sum
+  (lambda (lst)
+    (if (equal? (length lst) 0) ;;if the list is empty
+	0 ;;Return 0
+	(+ (car lst) (sum (cdr lst)))))) ;;Otherwhise, call the function recursively
+
+
+;;returns a list of the first n elements of the list
+
+
+
+
+

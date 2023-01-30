@@ -1,0 +1,3 @@
+(define subst (lambda (old new input)
+    (cond ((null? input)) '())
+    ((list? input) (subst old new input)))))
